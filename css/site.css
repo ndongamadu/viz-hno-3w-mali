@@ -1,0 +1,82 @@
+/*body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}*/
+
+
+.description{
+    text-align: justify;
+}
+
+/*.col-sm-6, .col-sm-4{
+	padding-left: 0px;
+}*/
+
+.dc-chart tbody tr.dc-table-group {
+    color: transparent;
+}
+
+.dc-chart tbody tr.dc-table-group td.dc-table-label{
+    padding: 0px;
+}
+
+#mapDisclaimer {
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+
+hr {
+	margin-bottom: 25px;
+}
+#map {
+	width: 100%;
+	height: 380px;
+}
+
+.dc-chart g.row text {
+    /*dominant-baseline: middle;*/
+    fill: #333;
+    font-size: 1.0em;
+}
+
+#orgTypeChart svg g g.axis.x text {
+    text-anchor: start;
+    transform: rotate(-15deg);
+}
+
+#orgTypeChart svg g g.axis.y {
+    display: none;
+}
+#orgTypeChart{
+	padding-top: 10px;
+}
+
+#sideChart {
+	width: 50%;
+}
+
+.topKeyFigure{
+	font-size: 2.1em;
+	margin-top:30px;
+	color: #296CB1;
+}
+
+#topKeyFigure h6{
+	color: #296CB1;
+	margin-top: 0px;
+}
+
+.table {
+	font-size: 0.9em;
+  	height: 800px;
+  	overflow-y: auto;
+  	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.d3-tip {
+    padding: 5px;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+}

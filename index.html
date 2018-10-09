@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>HDX HNO/3W | Mali</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dc.css" />
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/c3.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3.tip.min.js"></script>
+    <script src="js/crossfilter.v1.min.js"></script>
+    <script src="js/dc.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/dc.leaflet.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/c3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>MALI - 2018 Humanitarian Needs Overview and 3W visualization</h5>
+                    <p class="small description">
+                        Lorem ipsum proident dolor labore elit elit non proident occaecat ex nostrud est consequat magna aute sit in sunt veniam sint minim magna et cupidatat tempor exercitation nulla elit nisi aliquip pariatur dolor esse velit eu consequat laborum fugiat id aute aute sed excepteur deserunt dolor aliqua adipisicing id sunt velit aliquip in ex ad dolore dolor aliquip enim nulla fugiat veniam occaecat aliquip occaecat nisi in officia et officia magna ullamco velit minim nostrud occaecat cupidatat adipisicing consequat proident mollit irure consequat dolor esse irure officia ut ut in non sunt et labore aute laboris commodo ullamco dolor fugiat esse et nulla minim amet.
+                    </p>
+                </div> <!-- col-md-12 -->
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>NUMBER OF ACTIVE ORGS (per Sector)</h6>
+                    <div id="orgSectorChart"></div>
+                </div><!-- col-md-6 -->
+                <div class="col-md-6">
+                    <h6>PEOPLE IN NEED (per Sector)</h6>
+                    <div id="pinSectorChart"></div>
+                </div> <!-- col-md-6 -->
+                <div class="col-md-6">
+                    <h6>NUMBER OF ACTIVE ORGS (per adm1)</h6>
+                    <div id="orgRegionChart"></div>
+                </div><!-- col-md-6 -->
+                <div class="col-md-6">
+                    <h6>PEOPLE IN NEED (per adm1)</h6>
+                    <div id="pinRegionChart"></div>
+                </div> <!-- col-md-6 -->
+
+            </div> <!-- row -->
+        </div><!-- col-sm-4 -->
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4" id="topKeyFigure">
+                    <div class="topKeyFigure" id="totalPIN"></div>
+                    <h6>OVERALL<br>PEOPLE IN NEED<br>(HNO 2018)</h6>
+                </div><!-- col-md-4 -->
+                <div class="col-md-4" id="topKeyFigure">
+                    <div class="topKeyFigure" id="totalAffected"></div>
+                    <h6>OVERALLL<br>PEOPLE AFFECTED<br>(HNO 2018)</h6>
+                </div><!-- col-md-4 -->
+                <div class="col-md-4" id="topKeyFigure">
+                    <div class="topKeyFigure" id="totalOrgs">456</div>
+                    <h6>NUMBER OF ACTIVE ORGANIZATION<br>(as of August 2018)</h6>
+                </div><!-- col-md-4 -->
+            </div> <!-- row -->
+            <hr>
+            <div class="row" id="secondblock">
+                <!-- <h6>PIN/Adm2 Map</h6> -->
+                <div id="map"></div>
+                <div class="clearfix"></div>
+                <p class="small" id="mapDisclaimer">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
+            </div><!-- row -->
+            <div class="row">
+                <h6>PIN/Adm2</h6>
+                <div id="pinAdm2Chart"></div>
+            </div><!-- row -->
+        </div><!-- col-md-4 -->
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <h6>Number of active Orgs per type</h6> -->
+                    <div id="orgTypeChart"></div>
+                </div><!-- col-md-12 -->
+            </div><!-- row -->
+             <div class="row">
+                <div class="col-md-12">
+                    <h6 style="text-align: center;">(Select an organization type to filter the table)</h6>
+                    <table class="table table-responsive table-bordered" id="datatable">
+                        <thead>
+                            <tr>
+                                <th>ORGANIZATION</th>
+                                <th>SECTOR</th>
+                                <th>REGION</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div><!-- col-md-12 -->
+            </div><!-- row -->
+        </div><!-- col-md-4 -->
+    </div> <!-- container -->
+    <script src="js/site.js"></script>
+    <!-- insert google analytics code -->
+    <script></script>
+</body>
+
+</html>
